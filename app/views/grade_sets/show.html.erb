@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @grade_set.year %>
+</p>
+
+<p>
+  <strong>Grade1:</strong>
+  <%= @grade_set.grade1 %>
+</p>
+
+<p>
+  <strong>Grade2:</strong>
+  <%= @grade_set.grade2 %>
+</p>
+
+<p>
+  <strong>Grade3:</strong>
+  <%= @grade_set.grade3 %>
+</p>
+
+<p>
+  <strong>Grade4:</strong>
+  <%= @grade_set.grade4 %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @grade_set.student.name %>
+</p>
+
+<%= link_to 'Edit', edit_grade_set_path(@grade_set) %> |
+<%= link_to 'Back', grade_sets_path %>

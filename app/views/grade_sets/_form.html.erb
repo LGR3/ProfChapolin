@@ -1,0 +1,52 @@
+<%= form_for(grade_set) do |f| %>
+  <% if grade_set.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(grade_set.errors.count, "error") %> prohibited this grade_set from being saved:</h2>
+
+      <ul>
+      <% grade_set.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+  </div>
+
+  <div class="field">
+    <%= f.label :grade1 %>
+    <%= f.text_field :grade1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :grade2 %>
+    <%= f.text_field :grade2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :grade3 %>
+    <%= f.text_field :grade3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :grade4 %>
+    <%= f.text_field :grade4 %>
+  </div>
+
+<% if not @grade_set.persisted? %>
+
+  <div class="field">
+    <%= f.label :student_id %>
+    <%= f.collection_select :student_id, @students, :id, :name %>
+
+  </div>
+
+<% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

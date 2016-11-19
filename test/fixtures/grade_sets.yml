@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: MyString
+  grade1: 9.99
+  grade2: 9.99
+  grade3: 9.99
+  grade4: 9.99
+  student: one
+
+two:
+  year: MyString
+  grade1: 9.99
+  grade2: 9.99
+  grade3: 9.99
+  grade4: 9.99
+  student: two

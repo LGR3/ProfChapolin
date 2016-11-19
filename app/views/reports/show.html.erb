@@ -1,0 +1,29 @@
+<h1>NOTAS</h1>
+
+<h1>Olá <%= @student.name %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ano</th>
+      <th>Nota 1</th>
+      <th>Grade2</th>
+      <th>Grade3</th>
+      <th>Grade4</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @student.grade_sets.each do |grade_set| %>
+    <tr>
+        <td><%= grade_set.year %></td>
+        <td><%= grade_set.grade1 %></td>
+        <td><%= grade_set.grade2 %></td>
+        <td><%= grade_set.grade3 %></td>
+        <td><%= grade_set.grade4 %></td>
+    </tr> 
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "Voltar", :back %>

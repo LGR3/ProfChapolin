@@ -1,0 +1,1 @@
+json.array! @grade_sets, partial: 'grade_sets/grade_set', as: :grade_set

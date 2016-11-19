@@ -1,0 +1,1 @@
+json.partial! "grade_sets/grade_set", grade_set: @grade_set
