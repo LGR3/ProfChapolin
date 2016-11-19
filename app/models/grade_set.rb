@@ -10,4 +10,9 @@ class GradeSet < ApplicationRecord
 	validates_numericality_of :grade1, :grade2, :grade3, :grade4,
 		greater_than_or_equal_to: 0, less_than_or_equal_to: 10, allow_nil: true
 
+	def avg
+		valid_grades = [grade1,grade2,grade3,grade4].compact
+		valid_grades.sum/valid_grades.size
+	end
+
 end

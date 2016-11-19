@@ -1,3 +1,4 @@
+<div>
 <h1>Olá aluno,</h1>
 <p>Digite o seu CPF para ver suas notas.</p>
 <form action="/report" method="get">
@@ -5,3 +6,8 @@
 	<button type="submit">Consulta</button>
 	<%=flash["error_cpf"]%>
 </form>
+
+<br>
+
+<%= link_to 'ÁREA DO PROFESSOR', '/prof' %>
+</div>
