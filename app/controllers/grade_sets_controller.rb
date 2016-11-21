@@ -1,10 +1,11 @@
 class GradeSetsController < ApplicationController
   before_action :set_grade_set, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with name:"profchapolin", password: "123456"
 
   # GET /grade_sets
   # GET /grade_sets.json
   def index
-    @grade_sets = GradeSet.all
+    @grade_sets = GradeSet.all.order(:year)
   end
 
   # GET /grade_sets/1

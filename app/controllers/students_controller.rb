@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with name:"profchapolin", password: "123456"
 
   # GET /students
   # GET /students.json
