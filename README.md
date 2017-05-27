@@ -1,9 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# [help: Lailson; pushes: pc de Rubens]
 
-Things you may want to cover:
+Ajudados por Lailson enviamos todos os commits de uma ide só no Notebook de Rubens.  
+O Evento foi irado! Aprendemos muito em pouquíssimo tempo.
 
 * Ruby version
 
@@ -20,5 +20,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
